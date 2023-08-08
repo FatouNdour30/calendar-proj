@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calendrier et Tâches</title>
+</head>
+<body>
+    <div class="calendar">
+        <h2>TACHE DE VALIDATION JS</h2>
+            <div class="header">
+              <button id="prevButton">&lt;</button>
+              <div id="monthYear"></div>
+              <button id="nextButton">&gt;</button>
+            </div>
+            <div class="days">
+              <div class="day">Dim</div>
+              <div class="day">Lun</div>
+              <div class="day">Mar</div>
+              <div class="day">Mer</div>
+              <div class="day">Jeu</div>
+              <div class="day">Ven</div>
+              <div class="day">Sam</div>
+            </div>
+            <div class="dates" id="dates"></div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close">&times;</span>
+            <h2 id="modal-date"></h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Titre de la tâche" required>
+                <textarea id="task-description" placeholder="Description de la tâche" required></textarea>
+                <button type="submit">Ajouter</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
